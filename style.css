@@ -1,0 +1,124 @@
+/*---------- All Body ----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/*---------- Site Wrapper ---------*/
+
+.container {
+    max-width: 100;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*----------- Nav-Bar -----------*/
+
+.navbar-container  {
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.list {
+    list-style-type: none;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #8f8f8f;
+}
+.active {
+    color: rgb(24, 24, 24);
+    border-bottom: #7678e1 3px solid;
+}
+.button-group   {
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-1 {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 120px;
+}
+.nav-button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    background-color: #5955b3;
+    color: whitesmoke;
+}
+
+/*---------- Hero-Section ----------*/
+
+.banner-container {
+    display: flex;
+    margin: 1% auto;
+    max-width: 80%;
+}
+.right-image  {
+    position: sticky;
+    margin-right: -250px;    
+}
+.left-column  {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.right-column {
+    flex-grow: 1;
+}
+.heading-text {
+    font-size: 80px;
+    line-height: 1;
+    max-width: 70%;
+}
+span  {
+    color: #5955b3;
+}
+.btn {
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: #5955b3;
+    color: whitesmoke;
+}
+.cta {
+    display: flex;
+    justify-content: flex-start;
+}
+.description {
+    max-width: 70%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.para   {
+    color: #848484;
+}
+
+/*---------- Hover-Effects -----------*/
+
+.nav-button:hover {
+    background-color: #7678e1;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+/*----- Responsiveness fixed -----*/
+@media screen and (max-width: 1860px) {
+    .heading-text {
+       
+        font-size: 65px;
+    }
+    .para {
+        max-width: 80%;
+        font-size: 18px;
+    }
+}
